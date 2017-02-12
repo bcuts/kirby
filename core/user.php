@@ -263,10 +263,6 @@ abstract class UserAbstract {
 
     }
 
-    if(!empty($data['email']) and !v::email($data['email'])) {
-      throw new Exception('Invalid email');
-    }
-
   }
 
   public function update($data = array()) {
